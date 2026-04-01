@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 echo 'Installing Python dependencies...'
-                bat 'pip install selenium'
+                bat 'C:\\Users\\Devansh\\Miniconda3\\Scripts\\pip.exe install selenium'
             }
         }
 
         stage('Run Selenium Tests') {
             steps {
                 echo 'Running Selenium test cases...'
-                bat 'python tests/test_form.py'
+                bat 'C:\\Users\\Devansh\\Miniconda3\\python.exe tests/test_form.py'
             }
         }
     }
