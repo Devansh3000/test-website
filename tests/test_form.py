@@ -13,7 +13,7 @@ class StudentFeedbackFormTest(unittest.TestCase):
     def setUp(self):
         """Launch Chrome browser before each test."""
         options = webdriver.ChromeOptions()
-        # options.add_argument("--headless")   # Uncomment for headless mode in Jenkins
+        options.add_argument("--headless")   # Uncomment for headless mode in Jenkins
         options.add_argument("--no-sandbox")
         options.add_argument("--disable-dev-shm-usage")
         self.driver = webdriver.Chrome(options=options)
